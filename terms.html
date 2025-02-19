@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    /* Navbar Styles */
+    nav {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+    nav .logo a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    nav .toggle-button {
+      background-color: #1e3c72;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    nav .toggle-button:hover {
+      background-color: #142850;
+    }
+
+    /* Main Content Styles */
+    main {
+      flex: 1;
+      padding: 20px;
+      text-align: left;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    main h1 {
+      text-align: center;
+    }
+    .notice {
+      font-size: 0.8em;
+      color: #666;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    /* Footer Styles */
+    footer {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    footer .copyright {
+      font-size: 0.9em;
+    }
+    footer .links {
+      display: flex;
+      gap: 15px;
+    }
+    footer .links a {
+      color: white;
+      text-decoration: none;
+    }
+    footer .links a:hover {
+      color: #ffcc00;
+    }
+    footer .scroll-top {
+      background-color: #1e3c72;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    footer .scroll-top:hover {
+      background-color: #142850;
+    }
+
+    /* Dark Mode Styles */
+    .dark-mode {
+      background-color: #121212;
+      color: #ffffff;
+    }
+    .dark-mode nav {
+      background: linear-gradient(135deg, #0f1c3a, #1a2a5a);
+    }
+    .dark-mode footer {
+      background: linear-gradient(135deg, #0f1c3a, #1a2a5a);
+    }
+    .dark-mode .notice {
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">
+      <a href="#home">ti84calculator</a>
+    </div>
+    <button class="toggle-button" onclick="toggleDarkMode()">Dark Mode</button>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <h1>Welcome to ti84alculator!</h1>
+    <p>These terms and conditions outline the rules and regulations for the use of TI64Calculator's website, located at ti84alculator.me.</p>
+    <p>By accessing this website, we assume you accept these terms and conditions. Do not continue to use TI64Calculator if you do not agree to all the terms and conditions stated on this page.</p>
+
+    <h2>Cookies</h2>
+    <p>We use cookies to enhance your experience. By using our website, you agree to our cookie policy as outlined in our Privacy Policy.</p>
+
+    <h2>License</h2>
+    <p>Unless otherwise stated, TI64Calculator and/or its licensors own the intellectual property rights for all material on this website. All intellectual property rights are reserved.</p>
+    <p>You may not:</p>
+    <ul>
+      <li>Republish material from ti84alculator</li>
+      <li>Sell, rent, or sub-license material</li>
+      <li>Reproduce, duplicate, or copy material</li>
+      <li>Redistribute content</li>
+    </ul>
+
+    <h2>Comments</h2>
+    <p>Users may post and exchange opinions on certain areas of this website. ti84alculator does not filter, edit, or review comments before they appear. We are not liable for any content posted by users.</p>
+
+    <h2>Hyperlinking</h2>
+    <p>Certain organizations may link to our website without prior approval, such as:</p>
+    <ul>
+      <li>Government agencies</li>
+      <li>Search engines</li>
+      <li>News organizations</li>
+      <li>Online directories</li>
+    </ul>
+
+    <h2>Content Liability</h2>
+    <p>We are not responsible for content that appears on your website. You agree to defend us against claims arising from content on your website.</p>
+
+    <h2>Reservation of Rights</h2>
+    <p>We reserve the right to remove links to our website and to change our terms and conditions at any time.</p>
+
+    <h2>Disclaimer</h2>
+    <p>As long as the website and its services are provided free of charge, we will not be liable for any loss or damage of any nature.</p>
+
+    <p class="notice">
+      The website and the tools shown in this website are not mine and are shared for informational purposes only. If you are the owner of any content on this website and do not want your content to be shared, feel free to contact me for content removal.
+    </p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="copyright">
+      &copy; 2025 ti84calculator.me All rights reserved.
+    </div>
+    <div class="links">
+      <a href="about.html" target="_blank">About Us</a>
+      <a href="contact.html" target="_blank">Contact Us</a>
+      <a href="terms.html" target="_blank">Terms</a>
+    </div>
+    <button class="scroll-top" onclick="scrollToTop()">↑</button>
+  </footer>
+
+  <script>
+    // Dark Mode Toggle
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+
+    // Scroll to Top Function
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    }
+  </script>
+</body>
+</html>
+
+

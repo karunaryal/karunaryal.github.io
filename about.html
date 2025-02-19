@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    /* Navbar Styles */
+    nav {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+
+    nav .logo a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    nav .toggle-button {
+      background-color: #1e3c72;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    nav .toggle-button:hover {
+      background-color: #142850;
+    }
+
+    /* Main Content Styles */
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .about-content {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
+      line-height: 1.6;
+    }
+
+    .about-content h2 {
+      color: #1e3c72;
+    }
+
+    .about-content p {
+      margin-bottom: 20px;
+    }
+
+.notice {
+      font-size: 0.9em;
+      color: #666;
+      margin-top: 30px;
+    }
+
+
+     
+    /* Footer Styles */
+    footer {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+
+    footer .copyright {
+      font-size: 0.9em;
+    }
+
+    footer .links {
+      display: flex;
+      gap: 15px;
+    }
+
+    footer .links a {
+      color: white;
+      text-decoration: none;
+    }
+
+    footer .links a:hover {
+      color: #ffcc00;
+    }
+
+    footer .scroll-to-top {
+      background-color: #1e3c72;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: button;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+    }
+
+    footer .scroll-to-top:hover {
+      background-color: #142850;
+    }
+
+    /* Dark Mode Styles */
+    body.dark-mode {
+      background-color: #121212;
+      color: #ffffff;
+    }
+
+    body.dark-mode nav {
+      background: linear-gradient(135deg, #0f1c3d, #1a2a5a);
+    }
+
+    body.dark-mode footer {
+      background: linear-gradient(135deg, #0f1c3d, #1a2a5a);
+    }
+
+    body.dark-mode .about-content h2 {
+      color: #ffcc00;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+      }
+
+      footer .links {
+        flex-direction: column;
+        gap: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">
+      <a href="#home">ti84calculator</a>
+      <!-- Add logo here: <img src="logo.png" alt="Logo"> -->
+    </div>
+    <button class="toggle-button" onclick="toggleDarkMode()">Dark Mode</button>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <h1>About Us</h1>
+    <div class="about-content">
+      <h2>Welcome to TI84Calculator.me</h2>
+      <p>
+        I am a BSc fourth-year physics student with a strong interest in coding and technology. While I haven't created the TI-84 calculator itself, I am here to help you understand and use it effectively. With the help of AI and my knowledge, I have put together useful guides and resources to make it easier for students, teachers, and professionals to utilize the TI-84 calculator online without any cost.
+      </p>
+
+      <h2>Our Mission</h2>
+      <p>
+        Many people find the TI-84 calculator essential for math, science, and engineering, but not everyone can afford the calculator due to its high price. My goal is to simplify the learning process by providing clear instructions, step-by-step guides, and helpful tips so that you can maximize the use of the TI-84 calculator online with ease.
+      </p>
+
+      <h2>Why This Website?</h2>
+      <ul>
+        <li>Free guidance on using the TI-84 calculator online.</li>
+        <li>No downloads required – Learn and apply directly online.</li>
+      </ul>
+      <p>
+        If you're looking for help with using the TI-84 calculator, you're in the right place! Feel free to explore the guides, and if you have any questions, don’t hesitate to <a href="#contact-us">Contact Me</a>.
+      </p>
+
+
+
+
+      <p class="notice">
+        The website and the tools shown in this website are not mine and are shared for informational purposes only. If you are the owner of any content on this website and do not want your content to be shared, feel free to contact me for content removal.
+      </p>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="copyright">
+      &copy; 2025 ti84calculator.me. All rights reserved.
+    </div>
+    <div class="links">
+      <a href="about.html" target="_blank">About Us</a>
+      <a href="contact.html" target="_blank">Contact Us</a>
+      <a href="terms.html" target="_blank">Terms</a>
+    </div>
+    <button class="scroll-to-top" onclick="scrollToTop()">↑</button>
+  </footer>
+
+  <script>
+    // Dark Mode Toggle
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+
+    // Scroll to Top Function
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    }
+  </script>
+</body>
+</html>
