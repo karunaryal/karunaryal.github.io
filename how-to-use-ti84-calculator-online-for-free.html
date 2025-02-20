@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ti84calculator</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    /* Navbar Styles */
+    nav {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+    nav .logo a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    nav .right-section {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    nav .right-section a {
+      color: white;
+      text-decoration: none;
+      font-size: 1em;
+    }
+    nav .right-section a:hover {
+      color: #ffcc00;
+    }
+    nav .toggle-button {
+      background-color: #1e3c72;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    nav .toggle-button:hover {
+      background-color: #142850;
+    }
+
+    /* Main Content Styles */
+    main {
+      flex: 1;
+      padding: 20px;
+      text-align: center;
+    }
+    main .content {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+    main iframe {
+      width: 100%;
+      max-width: 600px;
+      height: 800px;
+      border: none;
+      margin-top: 20px;
+    }
+    .notice {
+      font-size: 0.8em;
+      color: #666;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    /* Footer Styles */
+    footer {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    footer .copyright {
+      font-size: 0.9em;
+    }
+    footer .links {
+      display: flex;
+      gap: 15px;
+    }
+    footer .links a {
+      color: white;
+      text-decoration: none;
+    }
+    footer .links a:hover {
+      color: #ffcc00;
+    }
+    footer .scroll-top {
+      background-color: #1e3c72;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    footer .scroll-top:hover {
+      background-color: #142850;
+    }
+
+    /* Dark Mode Styles */
+    .dark-mode {
+      background-color: #121212;
+      color: #ffffff;
+    }
+    .dark-mode nav {
+      background: linear-gradient(135deg, #0f1c3a, #1a2a5a);
+    }
+    .dark-mode footer {
+      background: linear-gradient(135deg, #0f1c3a, #1a2a5a);
+    }
+    .dark-mode .notice {
+      color: #aaa;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 600px) {
+      nav .logo a {
+        font-size: 1em;
+      }
+      nav .right-section {
+        gap: 10px;
+      }
+      nav .toggle-button {
+        padding: 6px 12px;
+        font-size: 0.9em;
+      }
+      footer {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">
+      <a href="index.html">ti84calculator</a>
+    </div>
+    <div class="right-section">
+      <a href="ti30.html" target="_blank">ti30xs</a>
+      <button class="toggle-button" onclick="toggleDarkMode()">Dark Mode</button>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <div class="content">
+      <h1>How to Use TI-84 Calculator Online for Free</h1>
+      <p>
+        The TI-84 calculator is the most powerful physical calculator for complex calculations. The TI-84 calculator is a popular graphing calculator designed by Texas Instruments, widely used in high school and college mathematics, physics, and engineering. It helps students and professionals plot graphs, solve equations, perform statistical analysis, and run custom programs. The TI-84 Plus series is approved for standardized tests like the SAT, ACT, and AP exams, making it a top choice for students.
+      </p>
+      <p>
+        While modern apps like Desmos and GeoGebra offer similar features online, the TI-84 remains essential in classrooms and exams due to its offline functionality. If you're looking for a powerful and reliable calculator for advanced math, the TI-84 is still one of the best options.
+      </p>
+    </div>
+    <iframe src="https://ti84calc.com/ti84calc" width="600px" height="800px" frameborder="0" allow="fullscreen"></iframe>
+    <p class="notice">
+      The website and the tools shown in this website are not mine and are shared for informational purposes only. If you are the owner of any content on this website and do not want your content to be shared, feel free to contact me for content removal.
+    </p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="copyright">
+      &copy; 2025 ti84calculator.me  All rights reserved.
+    </div>
+    <div class="links">
+      <a href="about.html" target="_blank">About Us</a>
+      <a href="contact.html" target="_blank">Contact Us</a>
+      <a href="terms.html" target="_blank">Terms</a>
+    </div>
+    <button class="scroll-top" onclick="scrollToTop()">↑</button>
+  </footer>
+
+  <script>
+    // Dark Mode Toggle
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+
+    // Scroll to Top Function
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    }
+  </script>
+</body>
+</html>
