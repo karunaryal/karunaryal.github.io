@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ti84calculator.me/sitemap.xml
