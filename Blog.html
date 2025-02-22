@@ -77,19 +77,43 @@ main iframe {
   border: none;
   margin-top: 20px;
 }
-.blog-links {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
+
+
+
+
+
+
+
+
+    
 .blog-links a {
-  color: #1e3c72;
+  color: #1e3c72; /* Default color */
   text-decoration: none;
   font-size: 1.1em;
 }
+
 .blog-links a:hover {
-  color: #ffcc00;
+  color: #ffcc00; /* Hover color */
 }
+
+/* Dark mode styles */
+.dark-mode .blog-links a {
+  color: #ffcc00; /* Color in dark mode */
+}
+
+.dark-mode .blog-links a:hover {
+  color: #1e3c72; /* Hover color in dark mode */
+
+
+
+
+
+
+
+
+
+
+  
 .notice {
   font-size: 0.8em;
   color: #666;
